@@ -1,0 +1,659 @@
+/* SERGE ... FILM-1 */
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+
+
+
+
+
+
+
+/* BODY */
+
+
+
+#maincont {
+    font-family: Arial, sans-serif;
+    color: #A49E9E;
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* HEADER */
+
+
+
+#headonetitle {
+    font-style: italic;
+    font-family: 'Bangers', cursive;
+    padding-left: 28px;
+    text-shadow: 1px 1px 5px black;
+    margin-left: 350px;
+    font-size: 37px;
+}
+
+#accueil-nav {
+	border-bottom: 4px solid #fbff00;
+}
+
+#accueil-nav #nav1-ul, #sm-ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+    text-align: center;
+}
+
+#accueil-nav > ul > .nav-list {
+	display: inline-block;
+}
+
+#accueil-nav > ul > li > .accueil-lien {
+	font-weight: bold;
+	padding: 20px 30px;
+    color: #fbff00; 
+	display: inline-block;
+}
+
+#accueil-nav > ul > li > .accueil-lien:hover {
+    color: white;
+    background: conic-gradient(lightpink, white, powderblue);
+    text-shadow: 0px 0px 6px black;
+    opacity: 0.9;
+    border-radius: 32px 1px 0px;
+    box-shadow: 0px -4px 18px black;
+}
+
+#accueil-nav .menu {
+	display: none;
+	position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    background: conic-gradient(lightpink, #0f0e0e, powderblue);
+}
+#accueil-nav ul li:hover .menu {
+	display: block;
+	padding: 15px;
+}
+
+.accueil-lien {
+	color: #f0f0f0;
+    text-decoration: none;
+    text-shadow: 1px 1px 12px black;
+}
+
+.accueil-lien:hover {
+    color:#fbff00;
+}
+
+.menu .accueil-lien {
+	line-height: 1.8;
+}
+
+.sous-menu {
+	width: 30%;
+	display: inline-block;
+    vertical-align: top;
+	padding: 0 2.5%;
+}
+
+.nav-list{
+    font-family: 'Righteous', cursive;
+    padding: 2px;
+    text-shadow: 1px 1px 9px black;
+}
+
+.nav-list:hover{
+    border-radius: 30px;
+    width: 100px;
+    margin: auto;
+    box-shadow: 0px 0px 6px black;
+    background: conic-gradient(powderblue, #0f0e0e, lightpink);
+}
+
+
+
+/* MAIN */
+
+
+
+#container{
+    width: 1200px;
+    margin: auto;
+    background-color: #333333;
+}
+
+#sec1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#left-doc{
+    flex-basis: 50%;
+    box-shadow: 0px 0px 8px black;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+}
+
+#filmtitle{
+    color: #262626;
+    font-size: 25px;
+}
+
+em{
+    color: grey;
+}
+
+#paramark{
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+}
+
+#paramark2{
+    margin-left: 10px;
+}
+
+#div-film{
+    display: flex;
+    justify-content: center;
+}
+
+#film{
+    width: 100%;
+    box-shadow: 0px 0Px 4px black;
+}
+
+.can-lec{
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    padding-left: 3px;
+}
+
+#can{
+    color: #2B4F87;
+    border-bottom: 2px ridge #2B4F87;
+}
+
+#parafilm{
+    font-size: 14px;
+    color: black;
+}
+
+#div-lecteur{
+    display: flex;
+    justify-content: center;
+}
+
+#fake{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#paralecteur{
+    text-align: center;
+}
+
+#right-doc{
+    background-color: #262626;
+    margin-top: 40px;
+    border-radius: 4px;
+    max-height: 800px;
+    border: 3px double #333333;
+    box-shadow: 0px 0px 4px black;
+    width: 300px;
+    margin-left: 90px;
+}
+
+#aside-title{
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    padding: 19px 0 0 0;
+}
+
+#ul-global{
+    list-style-type: none;
+    padding: 0;
+}
+
+.aside-liste{
+    padding: 6px 0 3px 4px;
+    border: 1px ridge #C8C495;
+    font-family: 'Teko', sans-serif;
+    font-size: 21px;
+}
+
+.fleche{
+    width: 20px;
+    vertical-align: middle;
+}
+
+.fleche:hover{
+    display: none;
+}
+
+.fleche:hover + .flechelien{
+    color: white;
+    display: flex;
+    justify-content: center;
+    transform: scale(1.1);
+}
+
+.flechelien{
+    text-decoration: none;
+    color: #C8C495;
+}
+
+#blogvision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 26px;
+}
+
+#div1{
+    border: 7px double white;
+    padding: 3px 3px 3px 3px;
+}
+
+#div2{
+    border: 7px double white;
+    padding: 3px 3px 0px 3px;
+}
+
+#ba-frame{
+    border: 7px double white;
+    box-shadow: 1px 1px 46px black;
+}
+
+#b-a{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 22px;
+    color: aliceblue;
+    text-shadow: 1px 1px 6px black;
+    animation-name: blinker;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+#sec2{
+    width: 1202px;
+    background-color: black;
+    padding-bottom: 35px;
+    border-radius: 3px;
+    border-bottom: 3px ridge #322e2e;
+}
+
+#titleforart{
+    border: 3px ridge #322e2e;
+    border-bottom: 4px double #322e2e;
+    padding: 12px 8px;
+    box-shadow: 0px 2px 0px grey;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-size: 22px;
+}
+
+#full-art{
+    display: flex;
+}
+
+#figoneart{
+    margin-left: 14px;
+}
+
+.art{
+    background-color: #48482c;
+    margin-right: 6px;
+    border-radius: 2px;
+}
+
+.art:hover{
+    background-color: orange;
+}
+
+.figlien{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+figure{
+    display: flex;
+    flex-direction:column;
+    margin: 10px;
+}
+
+.figimg{
+    background-size: cover;
+    width: 210px;
+    height: 280px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 7px black;
+}
+
+.fig{
+    background-color: #442d2d;
+    margin: 0 -10px;
+    padding: 7px 0;
+}
+
+.fig:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* FOOTER */
+
+
+
+
+footer {
+    width: 100%;
+    height: 140px;
+    background: radial-gradient(black, #32321c, rgb(3, 38, 72));
+    margin-top: 20px;
+    box-shadow: 1px 1px 13px black;
+    font-family: 'Teko', sans-serif;
+}
+
+#deroulant{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#deroulant a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    font-size: 24px;
+}
+
+#deroulant>li,
+#deroulant>li li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 163px;
+    padding: 6px 15px;
+    background-color: rgba(0, 0, 0, 0.794);
+}
+
+#deroulant>li li {
+    background: transparent none;
+}
+
+#deroulant>li li a {
+    color: white;
+    text-shadow: 1px 1px 18px black;
+}
+
+#deroulant>li li:hover {
+    background: rgb(238, 238, 238);
+}
+
+#deroulant>li:first-child {
+
+    border-radius: 8px 0 0 8px;
+}
+
+#deroulant>li:last-child {
+    border-right: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+#deroulant>li:hover {
+    background-color: rgba(183, 64, 238, 0.781);
+    background-color: rgba(26, 10, 119, 0.712);
+}
+
+#deroulant ul {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    max-height: 0em;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(221, 221, 221, 0.555);
+    overflow: hidden;
+    transition: 1s max-height 0.3s;
+    border-radius: 0 0 8px 8px;
+    margin-top: 17px;
+}
+
+#deroulant>li:hover ul {
+    max-height: 13em;
+    margin-top: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////// SERGE ... FILM-2 //////////////////////////////////*/
+
+
+
+
+
+#container2{
+    width: 1200px;
+    margin: auto;
+    background-color: #333333;
+    border-radius: 10px;
+    background: linear-gradient(to right, #31172b, #686262);
+}
+
+.nav-list:hover {
+    border-radius: 30px;
+    width: 120px;
+    margin: auto;
+    box-shadow: 0px 0px 6px black;
+    background: conic-gradient(powderblue, #0f0e0e, lightpink);
+}
+
+#mark2{
+    background-color:pink;
+}
+
+#filmtitle2{
+    font-size: 25px;
+    color: #2B4F87;
+}
+
+#maincont2{
+    background: linear-gradient(70deg, blue, pink);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #db4295;
+}
+
+#ba-frame2{
+    box-shadow: 1px 1px 46px #ba0067;
+}
+
+#sec1-f2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #31172b, #686262);
+}
+
+#right-doc2 {
+    background-color: #262626;
+    margin-top: 40px;
+    border-radius: 4px;
+    max-height: 817px;
+    border: 3px double #333333;
+    box-shadow: 0px 0px 4px black;
+    width: 300px;
+    margin-left: 90px;
+}
+
+.art2 {
+    background-color: #063479;
+    margin-right: 6px;
+    border-radius: 2px;
+}
+
+.art2:hover{
+    background-color:#c545c7;
+}
+
+.fig2 {
+    background-color: #700049;
+    margin: 0 -10px;
+    padding: 7px 0;
+}
+
+.fig2:hover{
+    text-decoration: underline;
+}
+
+#foot2 {
+    width: 100%;
+    height: 140px;
+    background: radial-gradient(#a24d9f, #260023, rgb(79, 168, 255));
+    margin-top: 20px;
+    box-shadow: 1px 1px 13px black;
+    font-family: 'Teko', sans-serif;
+}
+
+
+
+
+
+
+/*///////////////////////////////// SERGE ... FILM-3 //////////////////////////////////*/
+
+
+#container3{
+    width: 1200px;
+    margin: auto;
+    background-color: #333333;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffe300, #cb4b00);
+}
+
+.nav-list:hover {
+    border-radius: 30px;
+    width: 120px;
+    margin: auto;
+    box-shadow: 0px 0px 6px black;
+    background: conic-gradient(powderblue, #0f0e0e, lightpink);
+}
+
+#mark3{
+    background-color: #ffc800;
+}
+
+#filmtitle3{
+    font-size: 25px;
+    color: #ffd700;
+    text-shadow: 0px 0px 9px black;
+}
+
+#maincont3{
+    background: linear-gradient(70deg, #723f00, #181415);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #7d560b;
+}
+
+#ba-frame3{
+    box-shadow: 1px 1px 46px #50340b;
+}
+
+#sec1-f3{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #ffe300, #cb4b00);
+}
+
+#right-doc3 {
+    background-color: #262626;
+    margin-top: 40px;
+    border-radius: 4px;
+    max-height: 817px;
+    border: 3px double #333333;
+    box-shadow: 0px 0px 4px black;
+    width: 300px;
+    margin-left: 90px;
+}
+
+.art3 {
+    background-color: #85911a;
+    margin-right: 6px;
+    border-radius: 2px;
+}
+
+.art3:hover{
+    background-color: #ccff00;
+}
+
+.fig3 {
+    background-color: #1c4905;
+    margin: 0 -10px;
+    padding: 7px 0;
+}
+
+.fig3:hover{
+    text-decoration: underline;
+}
+
+#foot3 {
+    width: 100%;
+    height: 140px;
+    background: radial-gradient(#7b4706, #010001, rgb(110, 72, 3));
+    margin-top: 20px;
+    box-shadow: 1px 1px 13px black;
+    font-family: 'Teko', sans-serif;
+}
