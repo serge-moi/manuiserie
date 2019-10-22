@@ -1,7 +1,3 @@
-/* SERGE ... FILM-1 */
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
@@ -9,10 +5,508 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 
 
+body#body {
+    margin: 0;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    scroll-margin: 0px;
+    
+}
 
 
 
+header#header {
+    width: 100%;
+    height: 138px;
+    background-image: url("https://bit.ly/2qz9Xvp");
+    margin-bottom: 288px;
+}
 
+main#main {
+    width: 100%;
+    height: 2100px;
+    background-color: ;
+
+}
+
+main>article#article {
+    width: 90%;
+    height: 1520px;
+    margin: 0px 1.5% 0px 5%;
+    display: flex;
+    background-color: ;
+    
+}
+
+aside#aside {
+    width: 30%;
+    height: 1520px;
+    background-color: ;
+
+}
+
+section#section {
+    width: 10%;
+    height: auto;
+    background-color: yellowgreen;
+
+}
+/* div droite commentaire */
+.com {
+    width: 320px;
+    height: auto;
+    background-color: rgba(205, 107, 50, 0.596);
+    margin : 0px 40px 0px 0px;
+    border: 3px black solid;
+    border-radius: 0.5em;
+}
+
+.text2{
+    margin: 10px 10px 17px 10px ; 
+    padding: 10px 10px 10px 10px;
+    border: 1px black solid;
+    border-radius: 0.5em;
+    font-size: 105%;
+}
+
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexcolu{
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(205, 50, 50);
+    margin-top: 0px;
+}
+
+/* TAILLE DIV ASIDE TITRE FILMS */
+aside>div {
+    
+    width: 100%;
+    height: 25px;
+    
+    text-align: center;
+    padding-top: 10px;
+    margin: 80px 0px;
+}
+
+.none{
+    border: 1px black solid;
+    border-radius: 1em 0em 0em 0em;
+    background-color: rgb(97, 70, 70);
+    margin-top:0px;
+    color: white;
+}
+
+/* TAILLE AFFICHE FILMS */
+tr>td.A {
+    
+    text-align: center;
+    margin: 20px 100px 300px 100px;
+}
+
+tr>td>div>img {
+    width: 405px;
+    height: 540px;
+    border: 2px black solid;
+    border-radius:2em 2em 0em 0em  ;
+}
+
+/* DIV DESCRIPTION FILMS */
+tr>td>div>p {
+    width: 405px;
+    height: 30px;
+    background-color: rgb(235, 255, 255);
+    padding-top: 10px;
+    border: 2px black solid;
+    border-radius:0em 0em 1em 1em ;
+    font-size : 130%;
+    padding-bottom: 10px;
+}
+
+/* DIV LES FILMS A VOIR */
+
+#affibas{
+margin : 30px 20% 20px 20%;
+ 
+}
+
+
+/* DIV FILMS AFFICHE + DESCRIPTION */
+table {
+    width: 100%;
+    height: 2100px;
+    background-color: rgba(236, 214, 13, 0.301);
+    padding: 30px;
+    border: 1px black solid;
+    border-radius: 0em 1em 1em 1em;
+}
+
+tr {
+    width: 100%;
+    height: 300px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+aside>div>a {
+    color: black;
+    font-weight: bold;
+
+}
+
+
+/* HOVER TEXTE DIV AFFICHE */
+.container {
+    position: relative;
+    width: 270px;
+    height: 360px;
+    font-size:130%;
+}
+
+.image {
+    opacity: 1;
+    width: 270px;
+    height: 360px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+/* TEXTE DANS DIV AFFICHE  */
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 92px;
+    margin-left: 69px;
+}
+
+.container:hover .image {
+    opacity: 0.5;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+/* TEXTE COULEUR STYLE */
+.text {
+    background-color: rgba(34, 52, 70, 0.685);
+    color: rgb(255, 255, 255);
+    font-size: 22.5px;
+    text-align: center;
+    width: 406px;
+    height: 540px;
+    border-radius:1.5em 1.5em 0em 0em  ;
+    font-family: cursive;
+}
+
+div.text>p {
+    margin-top: 10px;
+}
+
+
+/* ANIMATION */
+@keyframes animation1{
+    0%,100%{transform: translateY(0px);}
+    50%{transform: translateY(-80px);}
+}
+
+.animation1 {
+    animation: animation1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite ;
+    animation-fill-mode:;
+}
+
+@keyframes animation2{
+    0%,100%{transform: translateY(0px);}
+    50%{transform: translateY(-115px);}
+}
+
+.animation2 {
+    animation: animation2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite ;
+    animation-fill-mode:;
+}
+
+
+@keyframes animation3{
+    0%,100%{transform: translateY(0px);}
+    50%{transform: translateY(-148px);}
+}
+
+.animation3 {
+    animation: animation3;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite ;
+    animation-fill-mode:;
+}
+
+@keyframes animation4{
+    0%,100%{transform: translateY(0px);}
+    50%{transform: translateY(-163px);}
+}
+
+.animation4 {
+    animation: animation4;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite ;
+    animation-fill-mode:;
+}
+
+@keyframes animation5{
+    0%,100%{transform: translateY(0px);}
+    50%{transform: translateY(-168px);}
+}
+
+.animation5 {
+    animation: animation5;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite ;
+    animation-fill-mode:;
+}
+
+@keyframes animation6{
+    0%,100%{transform: translateY(0px);}
+    50%{transform: translateY(-170px);}
+}
+
+.animation6 {
+    animation: animation6;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count: infinite ;
+    animation-fill-mode:;
+}
+
+
+/* ANIMATION FERMETURE AFFICHE TITRE */
+@keyframes animation7{
+    0%,{transform: translateY(0px);}
+    100%{transform: translateY(-32px);}
+}
+
+.animation7:hover {
+    animation: animation7;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: ;
+    animation-fill-mode:forwards;
+}
+
+/* ANIMATION LOGO */
+@keyframes animation8{
+    0%,100%{transform: translateX(0px);}
+    50%{transform: translateX(430px);}
+}
+
+.animation8 {
+    animation: animation8;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count:infinite ;
+    animation-fill-mode:;
+}
+
+@keyframes animation9{
+    0%,100%{transform: translateX(0px);}
+    50%{transform: translateX(430px);}
+}
+
+.animation9 {
+    animation: animation9;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.75s;
+    animation-iteration-count:infinite ;
+    animation-fill-mode:;
+}
+
+@keyframes animation10{
+    0%,100%{transform: translateX(0px);}
+    50%{transform: translateX(430px);}
+}
+
+.animation10 {
+    animation: animation10;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.5s;
+    animation-iteration-count:infinite ;
+    animation-fill-mode:;
+}
+
+
+/* HEADER BARRE DEROULANT */
+.accueil-lien1 {
+    color: #070404;
+    text-decoration: none;
+}
+
+.accueil-lien1:hover {
+    color: #195F87;
+}
+
+#accueil-nav1 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#accueil-nav1>ul>li {
+    display: inline-block;
+    font-size: 125%;
+}
+
+#accueil-nav1>ul>li>.accueil-lien1 {
+    font-weight: bold;
+    padding: 6px 30px;
+    color: rgba(0, 0, 0, 0.993);
+    display: inline-block;
+    font-size: 120%;
+    margin-top:140px;
+}
+
+#accueil-nav1>ul>li>.accueil-lien1:hover {
+    color: white;
+    background-color: rgba(44, 188, 214, 0.746);
+}
+
+#accueil-nav1 .menu1 {
+    display: none;
+    position: absolute;
+    background-image: url("https://bit.ly/31xmcFq");
+    background-position-x: center;
+    left: 0;
+    right: 0;
+}
+
+#accueil-nav1 ul li:hover .menu1 {
+    display: block;
+    padding-top:10px;
+    padding-bottom: 20px;
+}
+
+.sous-menu1 {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 2.5%;
+}
+
+.menu1 a {
+    line-height: 1.8;
+}
+
+
+/* MENU DEROULANT FOOTER */
+.sectionfoot {
+    width: 100%;
+    height: 150px;
+    margin-left:30px;
+}
+
+#deroulant a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+#deroulant>li,
+#deroulant>li li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 163px;
+    padding: 6px 15px;
+    background-color: rgba(63, 49, 252, 0.794);
+}
+
+#deroulant>li li {
+    background: transparent none;
+}
+
+#deroulant>li li a {
+    color: #444;
+}
+
+#deroulant>li li:hover {
+    background: rgb(238, 238, 238);
+}
+
+#deroulant>li:first-child {
+
+    border-radius: 8px 0 0 8px;
+}
+
+#deroulant>li:last-child {
+    border-right: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+#deroulant>li:hover {
+    background-color: rgba(183, 64, 238, 0.781);
+    background-color: rgba(26, 10, 119, 0.712);
+}
+
+#deroulant .ul1 {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    max-height: 0em;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(221, 221, 221, 0.555);
+    overflow: hidden;
+    transition: 1s max-height 0.3s;
+    border-radius: 0 0 8px 8px;
+    margin-top: 7px;
+}
+
+#deroulant>li:hover .ul1 {
+    max-height: 13em;
+    margin-top:7px;
+}
+
+
+/* SERGE ... FILM-1 */
 
 /* BODY */
 
@@ -26,7 +520,36 @@
     padding: 0;
 }
 
+#maincont4 {
+    font-family: Arial, sans-serif;
+    color: #A49E9E;
+    background-image: linear-gradient(#fad016d2,rgba(211, 63, 5, 0.712));
+    margin: 0;
+    padding: 0;
+}
 
+#maincont5 {
+    font-family: Arial, sans-serif;
+    color: #A49E9E;
+    background-image: linear-gradient(#a59b9bd2,rgb(0, 0, 0));
+    margin: 0;
+    padding: 0;
+}
+
+#maincont6 {
+    font-family: Arial, sans-serif;
+    color: #A49E9E;
+    background-image: linear-gradient(#fa1616d2,black);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* LOGO RESEAUX SOCIAUX */
+.img1{
+    width:100px ;
+    height:100px ;
+}
 
 /* HEADER */
 
@@ -310,15 +833,15 @@ em{
     border-bottom: 3px ridge #322e2e;
 }
 
+
 #titleforart{
     border: 3px ridge #322e2e;
     border-bottom: 4px double #322e2e;
     padding: 12px 8px;
     box-shadow: 0px 2px 0px grey;
     border-radius: 4px;
-    color: white;
     font-family: 'Teko', sans-serif;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 #full-art{
@@ -377,7 +900,7 @@ figure{
 
 
 
-footer {
+.foot {
     width: 100%;
     height: 140px;
     background: radial-gradient(black, #32321c, rgb(3, 38, 72));
