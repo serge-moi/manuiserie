@@ -5,29 +5,35 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 
 
-body#body {
+#body {
     margin: 0;
     background-color: aliceblue;
     width: 100%;
     height: 100%;
     scroll-margin: 0px;
-    
+    background: conic-gradient(at 0% 30%, #2d2828 10%, #e7e7ca 30%, #030404 50%);
 }
 
 
 
-header#header {
+#header {
     width: 100%;
     height: 138px;
     background-image: url("https://bit.ly/2qz9Xvp");
     margin-bottom: 288px;
 }
 
-main#main {
+#main {
     width: 100%;
     height: 2100px;
     background-color: ;
+}
 
+#big-title{
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: 0px 0px 5px black;
+    font-family: Righteous, sans-serif;
 }
 
 main>article#article {
@@ -39,14 +45,14 @@ main>article#article {
     
 }
 
-aside#aside {
+#aside {
     width: 30%;
     height: 1520px;
     background-color: ;
 
 }
 
-section#section {
+#section {
     width: 10%;
     height: auto;
     background-color: yellowgreen;
@@ -60,6 +66,7 @@ section#section {
     margin : 0px 40px 0px 0px;
     border: 3px black solid;
     border-radius: 0.5em;
+    margin-top: 11px;
 }
 
 .text2{
@@ -88,9 +95,10 @@ section#section {
 
 footer {
     width: 100%;
-    height: 100px;
-    background-color: rgb(205, 50, 50);
+    height: 120px;
+    background-color: rgb(218, 218, 218);
     margin-top: 0px;
+    box-shadow: 1px 1px 12px black;
 }
 
 /* TAILLE DIV ASIDE TITRE FILMS */
@@ -104,12 +112,17 @@ aside>div {
     margin: 80px 0px;
 }
 
-.none{
+.none {
     border: 1px black solid;
     border-radius: 1em 0em 0em 0em;
     background-color: rgb(97, 70, 70);
-    margin-top:0px;
-    color: white;
+    color: #ffcb00;
+    margin-top: 11px;
+    font-family: teko, sans-serif;
+    font-size: 24px;
+    padding-bottom: 17px;
+    text-shadow: 0px 0px 5px black;
+    box-shadow: -4px -2px 20px black;
 }
 
 /* TAILLE AFFICHE FILMS */
@@ -150,10 +163,20 @@ margin : 30px 20% 20px 20%;
 table {
     width: 100%;
     height: 2100px;
-    background-color: rgba(236, 214, 13, 0.301);
+    background-color: rgba(53, 38, 99, 0.301);
     padding: 30px;
     border: 1px black solid;
     border-radius: 0em 1em 1em 1em;
+    margin-top: 11px;
+    box-shadow: 9px -3px 18px #040404;
+}
+
+#titleforart1{
+    font-family: teko,sans-serif;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 27px white;
 }
 
 tr {
@@ -166,9 +189,9 @@ a:link {
 }
 
 aside>div>a {
-    color: black;
     font-weight: bold;
-
+    color: white;
+    text-shadow: 0px 0px 13px black;
 }
 
 
@@ -437,56 +460,62 @@ div.text>p {
 
 
 /* MENU DEROULANT FOOTER */
-.sectionfoot {
-    width: 100%;
-    height: 150px;
-    margin-left:30px;
+
+
+#deroulant-amine{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 57px;
 }
 
-#deroulant a {
+#deroulant-amine a {
     display: block;
     color: #fff;
     text-decoration: none;
+    opacity: 0.8;
+    font-size: 24px;
+    font-family: teko,sans-serif;
 }
 
-#deroulant>li,
-#deroulant>li li {
+#deroulant-amine>li,
+#deroulant-amine>li li {
     position: relative;
     display: inline-block;
     text-align: center;
     width: 163px;
     padding: 6px 15px;
-    background-color: rgba(63, 49, 252, 0.794);
+    background-color: rgba(0, 0, 0, 0.794);
 }
 
-#deroulant>li li {
+#deroulant-amine>li li {
     background: transparent none;
 }
 
-#deroulant>li li a {
-    color: #444;
+#deroulant-amine>li li a {
+    color: black;
+    text-shadow: 1px 1px 18px black;
 }
 
-#deroulant>li li:hover {
+#deroulant-amine>li li:hover {
     background: rgb(238, 238, 238);
 }
 
-#deroulant>li:first-child {
+#deroulant-amine>li:first-child {
 
     border-radius: 8px 0 0 8px;
 }
 
-#deroulant>li:last-child {
+#deroulant-amine>li:last-child {
     border-right: 0;
     border-radius: 0 8px 8px 0;
 }
 
-#deroulant>li:hover {
-    background-color: rgba(183, 64, 238, 0.781);
-    background-color: rgba(26, 10, 119, 0.712);
+#deroulant-amine>li:hover {
+    background-color: rgba(0, 105, 154, 0.712);
 }
 
-#deroulant .ul1 {
+#deroulant-amine ul {
     position: absolute;
     top: 2em;
     left: 0;
@@ -497,12 +526,12 @@ div.text>p {
     overflow: hidden;
     transition: 1s max-height 0.3s;
     border-radius: 0 0 8px 8px;
-    margin-top: 7px;
+    margin-top: 17px;
 }
 
-#deroulant>li:hover .ul1 {
+#deroulant-amine>li:hover ul {
     max-height: 13em;
-    margin-top:7px;
+    margin-top: 17px;
 }
 
 
@@ -900,7 +929,7 @@ figure{
 
 
 
-.foot {
+#foot {
     width: 100%;
     height: 140px;
     background: radial-gradient(black, #32321c, rgb(3, 38, 72));
